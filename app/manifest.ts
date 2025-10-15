@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Naman Barkiya Portfolio",
-    short_name: "Naman's Portfolio",
+    name: "Yordanos yohannes Portfolio",
+    short_name: "Yordanos's Portfolio",
     description:
-      "Naman Barkiya's modern developer portfolio built with Next.js - available as an open-source template",
+      "Yordanos yohannes's modern developer portfolio built with Next.js - available as an open-source template",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

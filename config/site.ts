@@ -1,21 +1,23 @@
 export const siteConfig = {
-  name: "Naman Barkiya | Developer Portfolio",
-  authorName: "Naman Barkiya",
-  username: "namanbarkiya",
+  name: "Yordanos Yohannes | Developer Portfolio",
+  authorName: "Yordanos Yohannes",
+  username: "yordanosyohannes",
   description:
-    "Naman Barkiya's portfolio - A modern, responsive Next.js portfolio for developers. This open-source template can be customized to showcase your own skills, projects, and professional experience.",
-  url: "https://nbarkiya.xyz",
+    "Yordanos Yohannes's portfolio - A modern, responsive Next.js portfolio for developers. This open-source template can be customized to showcase your own skills, projects, and professional experience.",
+  url: "https://yordanosyohannes.xyz",
   links: {
-    twitter: "https://x.com/namanbarkiya",
-    github: "https://github.com/namanbarkiya",
+    twitter: "https://x.com/yordanos655739",
+    github: "https://github.com/Yordanos7",
+    linkedin: "https://www.linkedin.com/in/yordanos-yohans-204b292ab",
+    email: "mailto:yordanosyohans7@gmail.com",
   },
-  ogImage: "https://nbarkiya.xyz/profile-img.jpg",
+  ogImage: "https://yordanosyohannes.xyz/profile-img.jpg",
   iconIco:
-    "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
+    "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/yordanos-favicon.ico",
   logoIcon:
-    "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/naman-logo.png",
+    "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/yordanos-logo.png",
   keywords: [
-    "Naman Barkiya",
+    "Yordanos Yohannes",
     "Full Stack Developer",
     "Web Developer Portfolio",
     "Next.js portfolio template",

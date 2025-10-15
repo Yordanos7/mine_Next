@@ -81,7 +81,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Naman Barkiya - Full Stack Developer Portfolio"
+            alt="Yordanos Yohannes - Full Stack Developer Portfolio"
             priority
           />
           <AnimatedText
@@ -89,7 +89,7 @@ export default function IndexPage() {
             delay={0.2}
             className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Naman Barkiya
+            Yordanos Yohannes
           </AnimatedText>
           <AnimatedText
             as="h3"
@@ -100,18 +100,20 @@ export default function IndexPage() {
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Open-source Next.js portfolio template. Fork this on GitHub to
-              create your own developer portfolio.
+              Hi am Yordanos Yohannes a full stack developer with a passion for
+              developing scalable web applications and working across the full
+              stack.And really passionate about AI and Devops and always eager
+              to learn new technologies and improve my skills.
             </p>
           </div>
 
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
               <Link
-                href={"https://github.com/namanbarkiya"}
+                href={siteConfig.links.github}
                 target="_blank"
                 className={cn(buttonVariants({ size: "lg" }))}
-                aria-label="View Naman Barkiya's GitHub profile"
+                aria-label="View Yordanos Yohannes's GitHub profile"
               >
                 <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
               </Link>
@@ -126,7 +128,7 @@ export default function IndexPage() {
                     size: "lg",
                   })
                 )}
-                aria-label="Contact Naman Barkiya"
+                aria-label="Contact Yordanos Yohannes"
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
