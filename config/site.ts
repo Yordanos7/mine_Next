@@ -10,6 +10,7 @@ export const siteConfig = {
     github: "https://github.com/Yordanos7",
     linkedin: "https://www.linkedin.com/in/yordanos-yohans-204b292ab",
     email: "mailto:yordanosyohans7@gmail.com",
+    resume: "/resume.pdf",
   },
   ogImage: "https://yordanosyohannes.xyz/profile-img.jpg",
   iconIco:

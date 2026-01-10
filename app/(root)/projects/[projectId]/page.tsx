@@ -93,7 +93,7 @@ export default function Project({ params }: ProjectPageProps) {
         alt={project.companyName}
         width={720}
         height={405}
-        className="my-8 rounded-md border bg-muted transition-colors"
+        className="my-8 rounded-xl border bg-muted shadow-sm transition-all hover:shadow-md"
         priority
       />
 
@@ -108,7 +108,6 @@ export default function Project({ params }: ProjectPageProps) {
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
           Description
         </h2>
-        {/* {<project.descriptionComponent />} */}
         <ProjectDescription
           paragraphs={project.descriptionDetails.paragraphs}
           bullets={project.descriptionDetails.bullets}
@@ -117,15 +116,15 @@ export default function Project({ params }: ProjectPageProps) {
 
       <div className="mb-7 ">
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-5">
-          Page Info
+          Feature Highlights
         </h2>
         {project.pagesInfoArr.map((page, ind) => (
-          <div key={ind}>
-            <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3">
-              <Icons.star className="h-5 w-5 mr-2" /> {page.title}
+          <div key={ind} className="mb-10 last:mb-0">
+            <h3 className="flex items-center font-heading text-xl leading-tight lg:text-xl mt-3 mb-2">
+              <Icons.star className="h-5 w-5 mr-2 text-primary" /> {page.title}
             </h3>
             <div>
-              <p>{page.description}</p>
+              <p className="text-muted-foreground mb-4">{page.description}</p>
               {page.imgArr.map((img, ind) => (
                 <Image
                   src={img}
@@ -133,7 +132,7 @@ export default function Project({ params }: ProjectPageProps) {
                   alt={img}
                   width={720}
                   height={405}
-                  className="my-4 rounded-md border bg-muted transition-colors"
+                  className="my-4 rounded-xl border bg-muted shadow-sm transition-all hover:shadow-md"
                   priority
                 />
               ))}

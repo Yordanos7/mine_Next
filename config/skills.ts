@@ -23,25 +23,25 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.react,
   },
   {
-    name: "GraphQL",
+    name: "Monorepo",
     description:
-      "Fetch data precisely with a powerful query language for APIs and runtime execution.",
+      "Manage multiple projects within a single repository for better code sharing and consistency.",
     rating: 4,
-    icon: Icons.graphql,
+    icon: Icons.monorepo,
   },
   {
-    name: "Nest.js",
+    name: "tRPC",
     description:
-      "Create scalable and modular applications with a progressive Node.js framework.",
-    rating: 4,
-    icon: Icons.nestjs,
-  },
-  {
-    name: "express.js",
-    description:
-      "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
+      "Build end-to-end typesafe APIs without code generation or runtime overhead.",
     rating: 5,
-    icon: Icons.express,
+    icon: Icons.trpc,
+  },
+  {
+    name: "Sass",
+    description:
+      "Enhance CSS with variables, nested rules, mixins, and more for maintainable styles.",
+    rating: 4,
+    icon: Icons.sass,
   },
   {
     name: "Node.js",
@@ -90,14 +90,14 @@ export const skillsUnsorted: skillsInterface[] = [
     description:
       "Develop cross-platform mobile apps using React for consistent and engaging experiences.",
     rating: 4,
-    icon: Icons.react,
+    icon: Icons.reactNative,
   },
   {
-    name: "Angular",
+    name: "REST API",
     description:
-      "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
-    rating: 3,
-    icon: Icons.angular,
+      "Design and implement scalable web services using representational state transfer principles.",
+    rating: 5,
+    icon: Icons.restApi,
   },
   {
     name: "Redux",
@@ -129,11 +129,11 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.tailwindcss,
   },
   {
-    name: "AWS",
+    name: "PostgreSQL",
     description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
-    rating: 3,
-    icon: Icons.amazonaws,
+      "Utilize the world's most advanced open source relational database for reliable data storage.",
+    rating: 5,
+    icon: Icons.postgresql,
   },
   {
     name: "Bootstrap",
@@ -155,6 +155,104 @@ export const skillsUnsorted: skillsInterface[] = [
       "Manage and organize relational databases efficiently for data-driven applications.",
     rating: 4,
     icon: Icons.netlify,
+  },
+  {
+    name: "Zustand",
+    description:
+      "A small, fast, and scalable bearbones state-management solution for React.",
+    rating: 5,
+    icon: Icons.zustand,
+  },
+  {
+    name: "Zod",
+    description:
+      "TypeScript-first schema validation with static type inference for robust data handling.",
+    rating: 5,
+    icon: Icons.zod,
+  },
+  {
+    name: "GSAP",
+    description:
+      "Create high-performance animations that work in every major browser.",
+    rating: 4,
+    icon: Icons.gsap,
+  },
+  {
+    name: "Turso",
+    description:
+      "The edge database based on libSQL, designed for high performance and low latency.",
+    rating: 4,
+    icon: Icons.turso,
+  },
+  {
+    name: "Firebase",
+    description:
+      "Build and grow apps people love with a comprehensive app development platform.",
+    rating: 5,
+    icon: Icons.firebase,
+  },
+  {
+    name: "Java",
+    description:
+      "Build robust, secure, and scalable high-performance applications with Java.",
+    rating: 4,
+    icon: Icons.java,
+  },
+  {
+    name: "Better Auth",
+    description:
+      "The most comprehensive authentication library for TypeScript, providing secure and flexible auth solutions.",
+    rating: 5,
+    icon: Icons.betterAuth,
+  },
+  {
+    name: "Clerk",
+    description:
+      "Modern authentication and user management for the web, enabling secure user sign-in and sign-up.",
+    rating: 5,
+    icon: Icons.clerk,
+  },
+  {
+    name: "Prisma",
+    description:
+      "Next-generation ORM for Node.js and TypeScript, making database access easy and type-safe.",
+    rating: 5,
+    icon: Icons.prisma,
+  },
+  {
+    name: "Postman",
+    description:
+      "Comprehensive platform for API testing, automation, and development, ensuring API reliability.",
+    rating: 4,
+    icon: Icons.postman,
+  },
+  {
+    name: "Swagger",
+    description:
+      "Standard for API documentation and design, providing interactive and human-readable API specs.",
+    rating: 4,
+    icon: Icons.swagger,
+  },
+  {
+    name: "OpenAI",
+    description:
+      "Integrate powerful AI models into applications for natural language processing and creative tasks.",
+    rating: 5,
+    icon: Icons.openai,
+  },
+  {
+    name: "RSA Encryption",
+    description:
+      "Implementation of public-key cryptography for secure end-to-end communication and data protection.",
+    rating: 5,
+    icon: Icons.rsaEncryption,
+  },
+  {
+    name: "LocalStorage / IndexedDB",
+    description:
+      "Client-side data storage solutions for persisting user data and application state within the browser.",
+    rating: 5,
+    icon: Icons["LocalStorage / IndexedDB"],
   },
 ];
 

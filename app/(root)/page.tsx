@@ -120,6 +120,24 @@ export default function IndexPage() {
             </AnimatedText>
             <AnimatedText delay={0.8}>
               <Link
+                href={siteConfig.links.resume}
+                target="_blank"
+                rel="noreferrer"
+                download="Yordanos_Yohannes_CV.pdf"
+                className={cn(
+                  buttonVariants({
+                    variant: "outline",
+                    size: "lg",
+                  }),
+                  "border-primary/20 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md italic font-semibold"
+                )}
+                aria-label="Download Yordanos Yohannes's CV"
+              >
+                <Icons.download className="w-4 h-4 mr-2" /> Download CV
+              </Link>
+            </AnimatedText>
+            <AnimatedText delay={1.0}>
+              <Link
                 href={"/contact"}
                 rel="noreferrer"
                 className={cn(

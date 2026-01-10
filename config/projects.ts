@@ -21,7 +21,7 @@ export interface ProjectInterface {
   githubLink?: string;
   techStack: ValidSkills[];
   startDate: Date;
-  endDate: Date;
+  endDate: Date | null;
   companyLogoImg: any;
   descriptionDetails: DescriptionDetailsInterface;
   pagesInfoArr: PagesInfoInterface[];
@@ -29,313 +29,336 @@ export interface ProjectInterface {
 
 export const Projects: ProjectInterface[] = [
   {
-    id: "built-design",
-    companyName: "Builtdesign",
+    id: "soser-union",
+    companyName: "Soser Union",
     type: "Professional",
     category: ["Web Dev", "Full Stack", "UI/UX"],
     shortDescription:
-      "Developed and optimized a high-performing website catering to over 4000 users, emphasizing efficiency and maintainability.",
-    websiteLink: "https://builtdesign.in",
+      "Developed a modern and secure web platform for Soser Saving & Credit Cooperative Union LTD, enabling digital banking and inclusive financial services for the Amhara Region.",
+    websiteLink: "https://soserunion.com",
     techStack: [
       "Next.js",
       "React",
-      "Node.js",
-      "MongoDB",
-      "GraphQL",
-      "Nest.js",
       "Typescript",
+      "Tailwind CSS",
+      "Better Auth",
+      "Prisma",
+      "PostgreSQL",
     ],
-    startDate: new Date("2021-07-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/builtdesign/logo.png",
+    startDate: new Date("2023-05-01"),
+    endDate: new Date("2024-01-15"),
+    companyLogoImg: "/projects/soserunion/logo.png",
     pagesInfoArr: [
       {
-        title: "Landing Page",
+        title: "Digital Banking Portal",
         description:
-          "Modern and responsive landing page showcasing company services and portfolio",
+          "Secure interface for members to manage savings, loans, and digital payments via TeleBirr and other local banks.",
         imgArr: [
-          "/projects/builtdesign/landing_1.webp",
-          "/projects/builtdesign/landing_3.webp",
-          "/projects/builtdesign/landing_5.webp",
-          "/projects/builtdesign/landing_6.webp",
-          "/projects/builtdesign/landing_2.webp",
-          "/projects/builtdesign/landing_4.webp",
+          "/projects/soserunion/portal_1.webp",
+          "/projects/soserunion/portal_2.webp",
         ],
       },
       {
-        title: "Custom PDF Reader and optimizer",
+        title: "Financial Dashboard",
         description:
-          "Specialized PDF viewer with optimization features for improved performance and user experience",
-        imgArr: ["/projects/builtdesign/pdf_opt.webp"],
+          "Real-time tracking of savings trends, loan disbursements, and inclusive banking growth for the cooperative union.",
+        imgArr: ["/projects/soserunion/dashboard.webp"],
       },
       {
-        title: "Clients Dashboard",
+        title: "Community & Media Hub",
         description:
-          "Comprehensive client portal with project tracking, document management, and communication tools",
-        imgArr: [
-          "/projects/builtdesign/cli_dashboard_1.webp",
-          "/projects/builtdesign/cli_dashboard_2.webp",
-          "/projects/builtdesign/cli_dashboard_3.webp",
-        ],
-      },
-      {
-        title: "Admin Dashboard",
-        description:
-          "Powerful administrative interface for managing users, projects, and system settings",
-        imgArr: ["/projects/builtdesign/logo.png"],
+          "Platform updates, news, and multimedia gallery showcasing community events and workshops in Dangla and surrounding areas.",
+        imgArr: ["/projects/soserunion/news.webp"],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "During my time at Builtdesign, I had the opportunity to work on a dynamic and user-focused project that involved designing and optimizing a website catering to a user base of over 4000 individuals. My role as a full-stack web developer was to ensure a seamless experience for users by creating an efficient and maintainable platform.",
-        "I collaborated closely with the product team to integrate cutting-edge features, employing technologies like Next.js and React with TypeScript for captivating front-end experiences. Additionally, I contributed significantly to the backend by utilizing Node.js, MongoDB, and GraphQL to design robust APIs and ensure smooth system functionality.",
-        "This experience allowed me to enhance my skills in various areas of web development and deliver a high-quality product. I gained proficiency in front-end technologies such as Material UI and Tailwind CSS, as well as backend technologies including Nest.js and MySQL. The project's success in catering to a large user base and providing an intuitive user interface has further motivated me to pursue excellence in web development.",
+        "Soser Union is a modern and secure web platform designed for Soser Saving & Credit Cooperative Union LTD, a membership-based financial cooperative committed to digital transformation and inclusive banking. The platform empowers members across Ethiopia's Amhara Region to achieve financial prosperity through easily accessible digital services.",
+        "I led the development of this platform, focusing on security and user experience. The site integrates seamlessly with popular Ethiopian mobile money services like TeleBirr, Awash Bank, and Bank of Abyssinia, facilitating instant transfers and account management. We implemented bank-level security features, including advanced encryption and multi-factor authentication, to protect member data.",
+        "The architecture leverages Next.js for high performance and SEO, with a robust backend using Prisma and PostgreSQL. The user-friendly interface allows for quick QR code payments and provides real-time insights into financial products, fostering community engagement through educational updates and workshop announcements.",
       ],
       bullets: [
-        "Developed and optimized a high-performing website catering to over 4000 users.",
-        "Collaborated closely with the product team to implement cutting-edge features.",
-        "Created an intuitive admin dashboard to efficiently manage and announce contest winners.",
-        "Leveraged Next.js, React with TypeScript for captivating front-end experiences.",
-        "Utilized Node.js, MongoDB, and GraphQL to design and manage databases.",
+        "Developed a modern, secure platform for a financial cooperative serving the Amhara Region.",
+        "Integrated mobile payment solutions with TeleBirr, Awash Bank, and Bank of Abyssinia.",
+        "Implemented bank-level security with multi-factor authentication and data encryption.",
+        "Designed a real-time financial dashboard for tracking savings trends and loan distributions.",
+        "Created a multimedia-rich news and events hub for cooperative community engagement.",
+        "Optimized for high performance and digital accessibility across diverse device types.",
       ],
     },
   },
   {
-    id: "the-super-quotes",
-    companyName: "The Super Quotes",
-    type: "Professional",
-    category: ["Mobile Dev", "Full Stack", "UI/UX"],
-    shortDescription:
-      "Elevated The Super Quotes app with JavaScript, React Native, APIs, Redux magic, and Google Play Store debut.",
-    websiteLink:
-      "https://play.google.com/store/apps/details?id=com.thesuperlife",
-    techStack: ["React Native", "Node.js", "MongoDB", "Javascript"],
-    startDate: new Date("2021-07-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/superquotes/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Quotes View Page",
-        description:
-          "Elegantly designed quotes display with customizable themes and sharing options",
-        imgArr: ["/projects/superquotes/app_2.webp"],
-      },
-      {
-        title: "Quotes Download Component",
-        description:
-          "Feature allowing users to download quotes as beautiful images for social media sharing",
-        imgArr: [
-          "/projects/superquotes/app_4.webp",
-          "/projects/superquotes/app_7.webp",
-        ],
-      },
-      {
-        title: "Account Management",
-        description:
-          "User profile management with favorites, history, and personalization settings",
-        imgArr: ["/projects/superquotes/app_6.webp"],
-      },
-      {
-        title: "Interest Selection and Update Page",
-        description:
-          "Interactive interface for users to select and update their quote preferences and interests",
-        imgArr: [
-          "/projects/superquotes/app_1.webp",
-          "/projects/superquotes/app_3.webp",
-        ],
-      },
-      {
-        title: "Responsiveness",
-        description:
-          "Adaptive design ensuring optimal user experience across various device sizes and orientations",
-        imgArr: ["/projects/superquotes/app_5.webp"],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        `Venturing into the world of creativity at The Super Quotes was an exhilarating journey. As a passionate developer, I led the charge in crafting a compelling application from inception to completion, using the dynamic duo of JavaScript and React Native.`,
-        `The heart of my achievement lay in the seamless integration of APIs, threading a tapestry of data flow that propelled the application's functionality to new heights.`,
-        `With the wizardry of Redux, I choreographed a symphony of state management and performance optimization, orchestrating a ballet of responsiveness that wowed users with every interaction.`,
-        `A crescendo awaited as I unveiled the culmination of my work on the grand stage of the Google Play Store. The app's debut marked an epoch, opening doors to an expansive audience eager to embrace the charm of The Super Quotes.`,
-      ],
-      bullets: [
-        "Led the end-to-end development of a captivating application using JavaScript and React Native.",
-        "Championed the integration of APIs, harmonizing data flow and enhancing application functionality.",
-        "Conducted Redux magic to ensure state management and optimize performance, delivering a mesmerizing user experience.",
-        "Premiered the application on the Google Play Store, capturing hearts and expanding its user base.",
-      ],
-    },
-  },
-  {
-    id: "apex-shopping",
-    companyName: "Apex Shopping App",
+    id: "browsmind",
+    companyName: "BrowsMind",
     type: "Personal",
-    category: ["Mobile Dev", "Full Stack", "UI/UX"],
+    category: ["Chrome Extension", "Productivity", "Analytics", "Privacy"],
     shortDescription:
-      "Developed a feature-rich mobile shopping application with admin panel, user authentication, and seamless product management using React Native and Firebase.",
-    githubLink: "https://github.com/namanbarkiya/apex-shopping-app",
-    techStack: ["React Native", "Javascript", "Redux", "Node.js", "express.js"],
-    startDate: new Date("2021-07-14"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/apex/logo.png",
+      "Built a powerful Chrome extension that tracks and analyzes users’ browsing activity to provide productivity insights, usage analytics, and digital behavior awareness while respecting user privacy.",
+    websiteLink: "https://chrome.google.com/webstore",
+    techStack: [
+      "Javascript",
+      "Typescript",
+      "Chrome Extensions API",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "IndexedDB",
+      "Chart.js",
+    ],
+    startDate: new Date("2025-06-01"),
+    endDate: new Date("2025-09-01"),
+    companyLogoImg: "/projects/browsmind/logo.png",
     pagesInfoArr: [
       {
-        title: "Splash Screen",
-        description: "Custom animated splash screen with app branding",
-        imgArr: ["/projects/apex/app_7.webp"],
-      },
-      {
-        title: "Login/Signup Authentication",
-        description: "Secure user authentication system with Firebase",
-        imgArr: ["/projects/apex/app_1.webp"],
-      },
-      {
-        title: "All Products Explore Screen",
-        description: "Interactive product browsing with categories and filters",
-        imgArr: ["/projects/apex/app_3.webp"],
-      },
-      {
-        title: "Admin Panel",
+        title: "Browsing Activity Tracker",
         description:
-          "Comprehensive admin dashboard for product and order management",
-        imgArr: ["/projects/apex/app_4.webp", "/projects/apex/app_6.webp"],
+          "Automatically records visited websites, session durations, and browsing frequency in real time using Chrome’s extension APIs.",
+        imgArr: [
+          "/projects/browsmind/tracker_1.webp",
+          "/projects/browsmind/tracker_2.webp",
+        ],
       },
       {
-        title: "Sidenav Navigation",
-        description: "Intuitive side navigation for easy app navigation",
-        imgArr: ["/projects/apex/app_5.webp"],
-      },
-      {
-        title: "Firebase Database",
+        title: "Productivity & Analytics Dashboard",
         description:
-          "Real-time database structure for efficient data management",
-        imgArr: ["/projects/apex/db.webp"],
+          "Visual dashboard showing daily, weekly, and monthly browsing patterns with charts, time distribution, and most-visited domains.",
+        imgArr: ["/projects/browsmind/dashboard.webp"],
+      },
+      {
+        title: "Privacy & Data Control Center",
+        description:
+          "Users can pause tracking, delete specific activity logs, export data, or fully reset stored information at any time.",
+        imgArr: ["/projects/browsmind/privacy.webp"],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "The Apex Shopping App represents a comprehensive mobile e-commerce solution that I developed from the ground up using React Native and Firebase. This project showcases my ability to create a full-featured shopping application with both user and admin functionalities.",
-        "The application features a robust authentication system, allowing users to securely sign up and log in. The product exploration interface is designed with user experience in mind, incorporating smooth navigation and intuitive filtering options.",
-        "One of the key highlights is the admin panel, which provides complete control over product management, order processing, and inventory tracking. The integration with Firebase ensures real-time data synchronization and reliable data persistence.",
-        "The app's architecture emphasizes scalability and performance, utilizing Redux for state management and following best practices for mobile app development. The UI/UX design focuses on providing a seamless shopping experience across different device sizes.",
+        "BrowsMind is a Chrome extension designed to help users understand and improve their digital habits by tracking browsing activity in a transparent and privacy-focused way. The extension captures essential activity data such as visited domains, active session time, and usage frequency, transforming raw data into meaningful insights.",
+        "I designed and developed BrowsMind from the ground up, focusing on performance, accuracy, and user trust. All data is stored locally using IndexedDB, ensuring users maintain full control over their browsing information without relying on external servers or third-party tracking services.",
+        "The extension features a clean, intuitive dashboard built with React and Tailwind CSS, offering interactive charts and summaries that help users identify productivity leaks, reduce distractions, and optimize online behavior. BrowsMind is lightweight, fast, and seamlessly integrates into daily browsing without affecting performance.",
       ],
       bullets: [
-        "Implemented secure user authentication and authorization using Firebase",
-        "Designed and developed an intuitive product browsing and shopping cart system",
-        "Created a comprehensive admin panel for product and order management",
-        "Integrated real-time data synchronization using Firebase Database",
-        "Implemented state management using Redux for optimal performance",
-        "Designed responsive UI components following mobile-first principles",
-        "Incorporated smooth animations and transitions for enhanced user experience",
+        "Developed a Chrome extension to track and analyze user browsing activity in real time.",
+        "Built a productivity-focused analytics dashboard with visual insights and trends.",
+        "Implemented local-first data storage using IndexedDB for enhanced privacy.",
+        "Used Chrome Extensions API to monitor tabs, URLs, and session duration accurately.",
+        "Designed a clean, modern UI with React, Vite, and Tailwind CSS.",
+        "Added full user control features including pause tracking, data deletion, and export.",
+        "Optimized performance to ensure minimal impact on browser speed and memory.",
       ],
     },
   },
   {
-    id: "builtdesign-blogs",
-    companyName: "Builtdesign Blogs",
-    type: "Professional",
-    category: ["Web Dev", "Full Stack", "UI/UX"],
+    id: "yalegn",
+    companyName: "Yalegn",
+    type: "Personal",
+    category: ["Web App", "Mobile App", "All-in-One", "Ethiopia"],
     shortDescription:
-      "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
-    websiteLink: "https://blog.builtdesign.in",
-    techStack: ["Next.js", "React", "Node.js", "MongoDB", "Typescript"],
-    startDate: new Date("2022-03-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/builtdesign-blogs/logo.png",
+      "An all-in-one Ethiopian platform designed to tackle real-life challenges across multiple sectors, providing solutions for marketplace, finance, services, jobs, and community engagement.",
+    websiteLink: "https://yalegn.onrender.com/",
+    techStack: [
+      "Next.js",
+      "React Native",
+      "Typescript",
+      "Tailwind CSS",
+      "Firebase",
+      "Prisma",
+      "PostgreSQL",
+      "Node.js",
+      "Express",
+      "Vercel",
+    ],
+    startDate: new Date("2025-01-01"),
+    endDate: new Date("2025-12-31"),
+    companyLogoImg: "/projects/yalegn/logo.png",
     pagesInfoArr: [
       {
-        title: "Blog Landing Page",
+        title: "Marketplace & Commerce",
         description:
-          "Modern and responsive landing page showcasing featured articles",
-        imgArr: ["/projects/builtdesign-blogs/blog_2.webp"],
-      },
-      {
-        title: "Blog Listing",
-        description:
-          "Organized display of all blog posts with search and filtering",
-        imgArr: ["/projects/builtdesign-blogs/blog_3.webp"],
-      },
-      {
-        title: "Category Navigation",
-        description: "Intuitive category-based navigation system",
-        imgArr: ["/projects/builtdesign-blogs/blog_1.webp"],
-      },
-      {
-        title: "Article View",
-        description:
-          "Clean and readable article layout with rich media support",
+          "A local marketplace that connects buyers and sellers across Ethiopia, enabling smooth trade, product discovery, and secure transactions.",
         imgArr: [
-          "/projects/builtdesign-blogs/blog_4.webp",
-          "/projects/builtdesign-blogs/blog_5.webp",
+          "/projects/yalegn/marketplace_1.webp",
+          "/projects/yalegn/marketplace_2.webp",
+        ],
+      },
+      {
+        title: "Daily Financial & Currency Flow",
+        description:
+          "Provides real-time tracking of financial activities, currency exchange rates, micro-loans, and payment flows for both individuals and businesses.",
+        imgArr: [
+          "/projects/yalegn/finance_1.webp",
+          "/projects/yalegn/finance_2.webp",
+        ],
+      },
+      {
+        title: "Jobs & Freelancing",
+        description:
+          "Connects job seekers with employers, provides freelance opportunities, and supports skill development tailored for the Ethiopian job market.",
+        imgArr: ["/projects/yalegn/jobs_1.webp", "/projects/yalegn/jobs_2.webp"],
+      },
+      {
+        title: "Community & Local Services",
+        description:
+          "Facilitates local service listings, community events, announcements, and problem-solving initiatives across Ethiopian cities and regions.",
+        imgArr: [
+          "/projects/yalegn/community_1.webp",
+          "/projects/yalegn/community_2.webp",
         ],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "As part of the Builtdesign platform, I developed a sophisticated blog website that serves as a content hub for the company's thought leadership and industry insights. The project leveraged Next.js and React to create a fast, SEO-friendly platform.",
-        "The blog platform features a modern, responsive design that prioritizes readability and user engagement. I implemented a robust content management system using Netlify CMS, enabling the content team to easily publish and manage blog posts.",
-        "The architecture includes server-side rendering for optimal performance and SEO, while MongoDB provides flexible content storage. TypeScript ensures code reliability and maintainability throughout the application.",
-        "Key features include category-based navigation, search functionality, and a rich text editor for content creation. The platform supports various content types including images, code snippets, and embedded media.",
+        "Yalegn is a comprehensive platform designed to address real problems in Ethiopia across marketplace commerce, finance, employment, and community services. It aims to provide a seamless ecosystem where citizens can buy, sell, manage money, find work, and engage with their communities.",
+        "The platform is built with a focus on accessibility, performance, and usability, leveraging modern technologies like Next.js, React Native, and Firebase to ensure smooth web and mobile experiences. Data privacy and user trust are central, with secure authentication, encrypted storage, and user-controlled settings.",
+        "Yalegn is modular and scalable, enabling future expansion into additional services such as healthcare, government services, and AI-powered recommendations. By uniting multiple essential services under one platform, Yalegn empowers Ethiopians to navigate daily life more efficiently and connect with resources that improve quality of life.",
       ],
       bullets: [
-        "Developed a modern blog platform using Next.js and React with TypeScript",
-        "Implemented Netlify CMS for efficient content management",
-        "Created a responsive design that prioritizes readability and user engagement",
-        "Built server-side rendering for optimal performance and SEO",
-        "Integrated MongoDB for flexible content storage and management",
-        "Developed category-based navigation and search functionality",
-        "Implemented rich text editing capabilities for content creation",
+        "An all-in-one Ethiopian platform addressing marketplace, finance, jobs, and community needs.",
+        "Provides a local marketplace connecting buyers and sellers with secure transactions.",
+        "Tracks daily financial activities, currency flows, and micro-loans for individuals and businesses.",
+        "Connects job seekers with employers and freelance opportunities within Ethiopia.",
+        "Supports community services, local events, announcements, and engagement.",
+        "Built with modern web and mobile technologies for high performance and accessibility.",
+        "Designed with privacy, security, and user control as core principles.",
+        "Modular and scalable for future expansion into healthcare, government, and AI services.",
       ],
     },
   },
   {
-    id: "portfolio-card",
-    companyName: "Portfolio Card",
+    id: "finflow",
+    companyName: "FinFlow",
     type: "Personal",
-    category: ["Web Dev", "Frontend", "3D Modeling"],
+    category: ["Finance", "Trading Dashboard", "Productivity", "Analytics"],
     shortDescription:
-      "Forged an immersive 3D Portfolio Card utilizing the prowess of Three.js and Blender, where art and technology converge in an interactive masterpiece.",
-    websiteLink: "https://card.namanbarkiya.xyz/",
-    githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
-    techStack: ["React", "Javascript", "HTML 5", "CSS 3"],
-    startDate: new Date("2022-03-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/card/logo.png",
+      "FinFlow is an all-in-one trading and financial management platform designed to provide real-time market insights, portfolio tracking, and advanced analytics for traders and investors. Currently under active development.",
+    websiteLink: "https://github.com/Yordanos7/FinFlow-OS",
+    techStack: [
+      "React",
+      "Vite",
+      "Typescript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "Socket.IO",
+      "Prisma",
+      "PostgreSQL",
+      "Chart.js",
+      "React Query",
+      "React-Window",
+    ],
+    startDate: new Date("2025-05-01"),
+    endDate: null,
+    companyLogoImg: "/projects/finflow/logo.png",
     pagesInfoArr: [
       {
-        title: "Card Views",
-        description: "Front and back views of the interactive 3D card",
-        imgArr: ["/projects/card/card_2.webp", "/projects/card/card_3.webp"],
-      },
-      {
-        title: "Interactive Elements",
+        title: "Trading Dashboard",
         description:
-          "Custom links embedded in the 3D model with interactive animations",
-        imgArr: ["/projects/card/card_1.webp"],
+          "A sleek and interactive dashboard that visualizes real-time market data, price movements, and portfolio performance, allowing traders to make informed decisions quickly.",
+        imgArr: [
+          "/projects/finflow/dashboard_1.webp",
+          "/projects/finflow/dashboard_2.webp",
+        ],
       },
       {
-        title: "3D Model Development",
-        description: "Blender project showcasing the model creation process",
-        imgArr: ["/projects/card/card_4.webp"],
+        title: "Portfolio & Risk Analytics",
+        description:
+          "Tracks user portfolios, calculates risk exposure, monitors asset allocation, and provides actionable insights for better financial decision-making.",
+        imgArr: [
+          "/projects/finflow/portfolio_1.webp",
+          "/projects/finflow/portfolio_2.webp",
+        ],
+      },
+      {
+        title: "Real-Time Market Integration",
+        description:
+          "Integrates live market feeds, price charts, and alerts to ensure users are always updated with the latest financial data.",
+        imgArr: ["/projects/finflow/market_1.webp"],
+      },
+      {
+        title: "Productivity & Workflow Tools",
+        description:
+          "Includes features like trading journals, strategy notes, task management, and analytics exports to enhance trader productivity and organization.",
+        imgArr: [
+          "/projects/finflow/workflow_1.webp",
+          "/projects/finflow/workflow_2.webp",
+        ],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "In my personal, I've ventured into the world of creativity, fashioning a distinctive portfolio card through the utilization of Three.js.",
-        "This portfolio card transcends convention; it emerges as a captivating 3D model, adorned with meticulous lighting arrangements that conjure a spellbinding visual journey.",
-        "To materialize this concept, I've harnessed the combined potential of Three.js and Blender, orchestrating a meticulous crafting of the central 3D model that serves as the cornerstone of the card's allure.",
-        "Yet, the allure extends beyond aesthetics. I've ingeniously interwoven custom links directly into the fabric of Three.js components. Through the creation and seamless integration of novel components, these additions elegantly rest upon the card's surface, mirroring its rotations and delivering an interactive dimension to my portfolio.",
-        "The portfolio card itself is an opus of motion, perpetually swaying in an auto-rotational dance that unfurls its multifaceted essence. As an enhancement, I've introduced an instinctive user interaction element. A simple, intuitive drag of the card in specific directions grants viewers a comprehensive vantage, enabling exploration from every conceivable angle.",
-        "At its core, my personal epitomizes technical finesse, artistic expression, and interactive design. The amalgamation of Three.js, Blender's prowess, and the innovation of component integration has birthed not only a portfolio card, but a dynamic encounter leaving an indelible imprint on all who partake.",
+        "FinFlow is a next-generation trading and financial platform built to empower traders and investors with real-time data, analytics, and workflow tools. It combines market intelligence with portfolio tracking to create a single, seamless interface for managing investments.",
+        "Currently under active development, FinFlow leverages modern technologies like React, Vite, and Tailwind CSS for the frontend, and Node.js, Express, Prisma, and PostgreSQL for the backend. Real-time market data is integrated using WebSockets via Socket.IO, ensuring users have instant access to price movements and alerts.",
+        "The platform is designed with performance, usability, and scalability in mind. Advanced features such as portfolio analytics, risk assessment, and productivity tools like trading journals provide a comprehensive environment for both novice and professional traders. The GitHub repository contains the live codebase, open for review, contribution, or personal exploration.",
       ],
       bullets: [
-        "Conceptualized and realized a distinct portfolio card using Three.js, highlighting creative exploration.",
-        "Crafted a mesmerizing 3D model enhanced by thoughtful lighting arrangements, resulting in a captivating visual voyage.",
-        "Leveraged the synergy of Three.js and Blender to meticulously sculpt and refine the central 3D model, embodying meticulous attention to detail.",
-        "Innovatively integrated custom links within Three.js components, introducing an interactive layer via seamlessly incorporated new elements.",
-        "Enabled an auto-rotating feature for the portfolio card, perpetually showcasing its various facets to observers.",
-        "Introduced an instinctual user interaction mechanism, allowing viewers to comprehensively explore the card's dimensions through simple, intuitive dragging motions.",
-        "Represented a fusion of technical prowess, artistic ingenuity, and interactive design in a project that reshapes the boundaries of conventional portfolio representation.",
+        "All-in-one trading and portfolio management platform in active development.",
+        "Interactive dashboard with real-time market data, charts, and alerts.",
+        "Portfolio tracking with risk analysis and asset allocation insights.",
+        "Built with React, Vite, TypeScript, Tailwind CSS, Node.js, Express, and PostgreSQL.",
+        "Real-time data integration using Socket.IO for instant market updates.",
+        "Productivity features like trading journals, strategy notes, and analytics exports.",
+        "Scalable architecture ready to expand with additional financial instruments and integrations.",
+        "GitHub repository available for developers: https://github.com/Yordanos7/FinFlow-OS",
+      ],
+    },
+  },
+  {
+    id: "rsa_encryption_chatapp",
+    companyName: "RSA Encryption ChatApp",
+    type: "Personal",
+    category: ["Real-Time Chat", "Encryption", "Security", "Web App"],
+    shortDescription:
+      "A secure real-time messaging platform that uses RSA encryption to protect messages end-to-end, ensuring that conversations remain private and tamper-proof.",
+    websiteLink: "https://github.com/Yordanos7/RSA_Encryption_ChatApp",
+    techStack: [
+      "React",
+      "Vite",
+      "Typescript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "Socket.IO",
+      "RSA Encryption",
+      "LocalStorage / IndexedDB",
+    ],
+    startDate: new Date("2025-05-20"),
+    endDate: new Date("2025-08-01"),
+    companyLogoImg: "/projects/rsa_chatapp/logo.png",
+    pagesInfoArr: [
+      {
+        title: "Real-Time Encrypted Messaging",
+        description:
+          "Experience instantaneous communication where every message is secured with client-side RSA encryption. The interface ensures that only you and your recipient can read the conversation.",
+        imgArr: ["/projects/rsa_chatapp/chat_1.webp"],
+      },
+      {
+        title: "Advanced RSA Key Management",
+        description:
+          "A transparent look into the cryptographic engine. Users manage their unique public and private key pairs locally, maintaining complete control over their digital security.",
+        imgArr: ["/projects/rsa_chatapp/keys_1.webp"],
+      },
+      {
+        title: "Modern & Secure UI",
+        description:
+          "A clean, responsive interface designed for privacy. Features include real-time status indicators and secure conversation threading for a fluid messaging experience.",
+        imgArr: ["/projects/rsa_chatapp/ui_1.webp"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "RSA Encryption ChatApp is a cutting-edge messaging platform engineered for uncompromising privacy. Built with a focus on end-to-end security, it utilizes the RSA-2048 cryptographic standard to ensure that every message remains strictly between the sender and the recipient, completely inaccessible to any intermediary or server.",
+        "The application demonstrates a sophisticated integration of real-time systems and client-side cryptography. By leveraging React and Vite for a high-performance frontend, combined with Node.js and Socket.IO for seamless duplex communication, users experience snappy messaging without sacrificing security. RSA key pairs are generated directly in the browser, with private keys never leaving the user's local storage—a design choice that prioritizes decentralization and user agency.",
+        "Beyond its security core, the app features a sleek, developer-centric UI built with Tailwind CSS. It includes real-time presence tracking, intuitive key management interfaces, and persistent conversation history via IndexedDB. This project serves as a comprehensive demonstration of full-stack engineering, cryptographic implementation, and the principles of Privacy by Design.",
+      ],
+      bullets: [
+        "Architecture focused on end-to-end security using RSA-2048 bit encryption.",
+        "Client-side key generation and local storage for maximum private key protection.",
+        "Bi-directional real-time communication powered by Socket.IO and Node.js.",
+        "Robust tech stack featuring React, TypeScript, and Vite for optimal performance.",
+        "Persistent, secure message history utilizing LocalStorage and IndexedDB.",
+        "Modern, responsive interface with online status tracking and instant notifications.",
+        "A benchmark for secure, private communication platforms in a portfolio context.",
+        "Open-source and available for review: https://github.com/Yordanos7/RSA_Encryption_ChatApp",
       ],
     },
   },

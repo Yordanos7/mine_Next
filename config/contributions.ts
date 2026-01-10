@@ -7,27 +7,13 @@ export interface contributionsInterface {
 
 export const contributionsUnsorted: contributionsInterface[] = [
   {
-    repo: "autogen",
+    repo: "Browsemind Chrome Extension",
     contibutionDescription:
-      "Improved the gallery component to showcase the community work.",
-    repoOwner: "Microsoft",
-    link: "https://github.com/microsoft/autogen/pull/1445",
-  },
-  {
-    repo: "creativecommons",
-    contibutionDescription:
-      "Closed Issue: Fixed navbar issue on the main website of creative common.",
-    repoOwner: "Creative Commons",
-    link: "https://github.com/creativecommons/creativecommons.github.io-source/pull/738",
-  },
-  {
-    repo: "creativecommons",
-    contibutionDescription:
-      "Added section for 'Other Opportunities' on main page.",
-    repoOwner: "Creative Commons",
-    link: "https://github.com/creativecommons/creativecommons.github.io-source/pull/719",
+      "Built and maintained Browsemind, a Chrome extension that intelligently tracks and analyzes users’ browsing activity to provide insights into online behavior, productivity patterns, and usage trends. Designed the extension architecture, implemented background scripts and content scripts, handled data collection and storage logic, and focused on performance, privacy, and a smooth user experience.",
+    repoOwner: "Yordanos7",
+    link: "https://github.com/Yordanos7/Browsemind_chrome_extension",
   },
 ];
 
 export const featuredContributions: contributionsInterface[] =
-  contributionsUnsorted.slice(0, 3);
+  contributionsUnsorted.slice(0, 1);

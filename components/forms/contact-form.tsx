@@ -81,9 +81,11 @@ export function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              <FormLabel className="flex items-center space-x-2">
+                <Icons.contact className="w-4 h-4" /> <span>Name</span>
+              </FormLabel>
               <FormControl>
-                <Input placeholder="Enter your name" {...field} />
+                <Input placeholder="Eg: Yordanos Yohannes" {...field} className="bg-background/50 focus:bg-background transition-all" />
               </FormControl>
               {/* <FormDescription>
                                 This is your public display name.
@@ -97,9 +99,11 @@ export function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel className="flex items-center space-x-2">
+                <Icons.mail className="w-4 h-4" /> <span>Email</span>
+              </FormLabel>
               <FormControl>
-                <Input placeholder="Enter your email" {...field} />
+                <Input placeholder="Eg: hello@yordanos.xyz" {...field} className="bg-background/50 focus:bg-background transition-all" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -110,9 +114,11 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel className="flex items-center space-x-2">
+                <Icons.messageSquare className="w-4 h-4" /> <span>Message</span>
+              </FormLabel>
               <FormControl>
-                <Textarea placeholder="Enter your message" {...field} />
+                <Textarea placeholder="How can I help you today?" {...field} className="min-h-[150px] bg-background/50 focus:bg-background transition-all" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -123,9 +129,11 @@ export function ContactForm() {
           name="social"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Social (optional)</FormLabel>
+              <FormLabel className="flex items-center space-x-2">
+                <Icons.link className="w-4 h-4" /> <span>Social Profile (Optional)</span>
+              </FormLabel>
               <FormControl>
-                <Input placeholder="Link for social account" {...field} />
+                <Input placeholder="Eg: https://linkedin.com/in/..." {...field} className="bg-background/50 focus:bg-background transition-all" />
               </FormControl>
               {/* <FormDescription>
                                 This is your public display name.
@@ -134,7 +142,9 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <Button type="submit" className="w-full lg:w-fit px-8 py-6 text-lg font-bold italic shadow-sm hover:shadow-lg transition-all transform active:scale-95">
+          Send Message
+        </Button>
       </form>
     </Form>
   );
