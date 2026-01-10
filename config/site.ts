@@ -3,7 +3,7 @@ export const siteConfig = {
   authorName: "Yordanos Yohannes",
   username: "yordanosyohannes",
   description:
-    "Yordanos Yohannes's portfolio - A modern, responsive Next.js portfolio. Take a look at my coding journey and the projects I've built.",
+    "Yordanos Yohannes's portfolio - A modern, responsive Next.js portfolio.",
   url: "https://yordanosyohannes.xyz",
   links: {
     twitter: "https://x.com/yordanos655739",
