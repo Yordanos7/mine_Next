@@ -73,33 +73,33 @@ export default function IndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
-      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
+      <section className="space-y-4 sm:space-y-6 pb-8 pt-6 px-4 sm:px-6 mb-0 md:pb-12 md:py-20 lg:py-32 min-h-screen flex items-center">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-3 sm:gap-4 text-center">
           <Image
             src={profileImg}
-            height={100}
-            width={100}
-            sizes="100vw"
-            className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
+            height={120}
+            width={120}
+            sizes="(max-width: 640px) 140px, (max-width: 768px) 160px, 200px"
+            className="bg-primary rounded-full mb-2 sm:mb-0 md:mb-2 w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px] h-auto border-4 sm:border-6 md:border-8 border-primary shadow-lg"
             alt="Yordanos Yohannes - Full Stack Developer Portfolio"
             priority
           />
           <AnimatedText
             as="h1"
             delay={0.2}
-            className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
+            className="font-heading text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight"
           >
             Yordanos Yohannes
           </AnimatedText>
           <AnimatedText
             as="h3"
             delay={0.4}
-            className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
+            className="font-heading text-sm sm:text-lg md:text-xl lg:text-2xl text-muted-foreground"
           >
             Full Stack Developer
           </AnimatedText>
-          <div className="mt-4 max-w-[42rem] text-center">
-            <p className="leading-normal text-muted-foreground text-sm sm:text-base">
+          <div className="mt-2 sm:mt-4 max-w-[90%] sm:max-w-[42rem] text-center px-2 sm:px-0">
+            <p className="leading-relaxed text-muted-foreground text-xs sm:text-sm md:text-base">
               Hi am Yordanos Yohannes a full stack developer with a passion for
               developing scalable web applications and working across the full
               stack.And really passionate about AI and Devops and always eager
@@ -107,18 +107,18 @@ export default function IndexPage() {
             </p>
           </div>
 
-          <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
-            <AnimatedText delay={0.6}>
+          <div className="flex flex-col mt-6 sm:mt-8 md:mt-10 items-center justify-center w-full sm:w-auto sm:flex-row sm:space-x-3 md:space-x-4 gap-2 sm:gap-3 px-4 sm:px-0">
+            <AnimatedText delay={0.6} className="w-full sm:w-auto">
               <Link
                 href={siteConfig.links.github}
                 target="_blank"
-                className={cn(buttonVariants({ size: "lg" }))}
+                className={cn(buttonVariants({ size: "lg" }), "w-full sm:w-auto text-sm sm:text-base")}
                 aria-label="View Yordanos Yohannes's GitHub profile"
               >
                 <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
               </Link>
             </AnimatedText>
-            <AnimatedText delay={0.8}>
+            <AnimatedText delay={0.8} className="w-full sm:w-auto">
               <Link
                 href={siteConfig.links.resume}
                 target="_blank"
@@ -129,14 +129,14 @@ export default function IndexPage() {
                     variant: "outline",
                     size: "lg",
                   }),
-                  "border-primary/20 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md italic font-semibold"
+                  "w-full sm:w-auto border-primary/20 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md italic font-semibold text-sm sm:text-base"
                 )}
                 aria-label="Download Yordanos Yohannes's CV"
               >
                 <Icons.download className="w-4 h-4 mr-2" /> Download CV
               </Link>
             </AnimatedText>
-            <AnimatedText delay={1.0}>
+            <AnimatedText delay={1.0} className="w-full sm:w-auto">
               <Link
                 href={"/contact"}
                 rel="noreferrer"
@@ -144,7 +144,8 @@ export default function IndexPage() {
                   buttonVariants({
                     variant: "outline",
                     size: "lg",
-                  })
+                  }),
+                  "w-full sm:w-auto text-sm sm:text-base"
                 )}
                 aria-label="Contact Yordanos Yohannes"
               >
@@ -152,8 +153,8 @@ export default function IndexPage() {
               </Link>
             </AnimatedText>
           </div>
-          <AnimatedText delay={1.2}>
-            <Icons.chevronDown className="h-6 w-6 mt-10" />
+          <AnimatedText delay={1.2} className="mt-4 sm:mt-6 md:mt-10">
+            <Icons.chevronDown className="h-5 w-5 sm:h-6 sm:w-6" />
           </AnimatedText>
         </div>
       </section>
