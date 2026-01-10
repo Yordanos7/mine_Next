@@ -15,8 +15,7 @@ export const siteConfig = {
   ogImage: "https://yordanosyohannes.xyz/profile-img.jpg",
   iconIco:
     "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/yordanos-favicon.ico",
-  logoIcon:
-    "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357294/assets/yordanos-logo.png",
+  logoIcon: "/logo.png",
   keywords: [
     "Yordanos Yohannes",
     "Full Stack Developer",
