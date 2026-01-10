@@ -99,6 +99,7 @@ export type ValidCategory =
   | "Ethiopia"
   | "Web App"
   | "Mobile App"
+  | "Finance"
   | "Trading Dashboard"
   | "Real-Time Chat"
   | "Encryption"
