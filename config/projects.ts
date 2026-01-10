@@ -170,15 +170,15 @@ export const Projects: ProjectInterface[] = [
     ],
     startDate: new Date("2025-01-01"),
     endDate: new Date("2025-12-31"),
-    companyLogoImg: "/projects/yalegn/logo.png",
+    companyLogoImg: "/projects/Yalegn/logo.png",
     pagesInfoArr: [
       {
         title: "Marketplace & Commerce",
         description:
           "A local marketplace that connects buyers and sellers across Ethiopia, enabling smooth trade, product discovery, and secure transactions.",
         imgArr: [
-          "/projects/yalegn/marketplace_1.webp",
-          "/projects/yalegn/marketplace_2.webp",
+          "/projects/Yalegn/marketplace_1.webp",
+          "/projects/Yalegn/marketplace_2.webp",
         ],
       },
       {
@@ -186,23 +186,23 @@ export const Projects: ProjectInterface[] = [
         description:
           "Provides real-time tracking of financial activities, currency exchange rates, micro-loans, and payment flows for both individuals and businesses.",
         imgArr: [
-          "/projects/yalegn/finance_1.webp",
-          "/projects/yalegn/finance_2.webp",
+          "/projects/Yalegn/finance_1.webp",
+          "/projects/Yalegn/finance_2.webp",
         ],
       },
       {
         title: "Jobs & Freelancing",
         description:
           "Connects job seekers with employers, provides freelance opportunities, and supports skill development tailored for the Ethiopian job market.",
-        imgArr: ["/projects/yalegn/jobs_1.webp", "/projects/yalegn/jobs_2.webp"],
+        imgArr: ["/projects/Yalegn/jobs_1.webp", "/projects/Yalegn/jobs_2.webp"],
       },
       {
         title: "Community & Local Services",
         description:
           "Facilitates local service listings, community events, announcements, and problem-solving initiatives across Ethiopian cities and regions.",
         imgArr: [
-          "/projects/yalegn/community_1.webp",
-          "/projects/yalegn/community_2.webp",
+          "/projects/Yalegn/community_1.webp",
+          "/projects/Yalegn/community_2.webp",
         ],
       },
     ],
