@@ -131,6 +131,90 @@ export default function ExperienceDetailPage({
         </AnimatedSection>
       ),
     },
+    ...(experience.certificate
+      ? [
+          {
+            value: "certificate",
+            label: "Certificate",
+            content: (
+              <AnimatedSection delay={0.3}>
+                <div className="space-y-5">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 p-4 rounded-lg bg-muted/40 border border-border">
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <Icons.award className="w-5 h-5 text-amber-500" />
+                        <h3 className="font-bold text-base sm:text-lg text-foreground">
+                          {experience.certificate.title}
+                        </h3>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Issued by{" "}
+                        <span className="font-semibold text-foreground">
+                          {experience.certificate.issuer}
+                        </span>{" "}
+                        • {experience.certificate.issuedDate}
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <Button variant="outline" size="sm" asChild>
+                        <a
+                          href={experience.certificate.image}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Icons.externalLink className="w-4 h-4 mr-1.5" />
+                          View Full Image
+                        </a>
+                      </Button>
+                      {experience.certificate.pdf && (
+                        <Button size="sm" asChild>
+                          <a
+                            href={experience.certificate.pdf}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download
+                          >
+                            <Icons.download className="w-4 h-4 mr-1.5" />
+                            Download PDF
+                          </a>
+                        </Button>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="p-4 rounded-lg bg-card border border-border/80">
+                    <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
+                      Official Citation & Recognition
+                    </h4>
+                    <p className="text-sm sm:text-base leading-relaxed text-foreground italic">
+                      &ldquo;{experience.certificate.description}&rdquo;
+                    </p>
+                  </div>
+
+                  <div className="relative rounded-xl overflow-hidden border-2 border-border bg-background shadow-lg">
+                    <a
+                      href={experience.certificate.image}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block group cursor-zoom-in"
+                      title="Click to view full size"
+                    >
+                      <Image
+                        src={experience.certificate.image}
+                        alt={experience.certificate.title}
+                        width={1200}
+                        height={800}
+                        className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                        priority
+                      />
+                    </a>
+                  </div>
+                </div>
+              </AnimatedSection>
+            ),
+          },
+        ]
+      : []),
   ];
 
   return (
@@ -186,13 +270,19 @@ export default function ExperienceDetailPage({
                       </p>
                     </div>
                   </div>
-                  <div className="flex justify-center sm:justify-end">
+                  <div className="flex flex-col items-center sm:items-end gap-2">
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20">
                       {getDurationText(
                         experience.startDate,
                         experience.endDate
                       )}
                     </span>
+                    {experience.certificate && (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs sm:text-sm font-medium bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                        <Icons.award className="w-3.5 h-3.5" />
+                        {experience.certificate.type}
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>

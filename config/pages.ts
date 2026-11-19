@@ -47,12 +47,13 @@ export const pagesConfig: PagesConfig = {
     },
   },
   contributions: {
-    title: "Contributions",
-    description: "Open-source contributions and community involvement.",
+    title: "Collaborations & Open Source",
+    description:
+      "Active enterprise engineering collaborations, organization contributions, and open-source software.",
     metadata: {
-      title: "Contributions",
+      title: "Collaborations & Open Source",
       description:
-        "Yordanos Yohannes's open-source contributions and community involvement.",
+        "Yordanos Yohannes's enterprise engineering collaborations, organization repositories, and open-source software.",
     },
   },
   resume: {

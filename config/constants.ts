@@ -103,7 +103,10 @@ export type ValidCategory =
   | "Trading Dashboard"
   | "Real-Time Chat"
   | "Encryption"
-  | "Security";
+  | "Security"
+  | "Healthcare"
+  | "Hospital Management"
+  | "Enterprise";
 
 export type ValidExpType = "Personal" | "Professional";
 

@@ -65,10 +65,16 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
               <span className="hidden sm:inline">•</span>
               <span>{experience.location}</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
                 {getDurationText(experience.startDate, experience.endDate)}
               </span>
+              {experience.certificate && (
+                <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                  <Icons.award className="w-3.5 h-3.5" />
+                  {experience.certificate.type}
+                </span>
+              )}
             </div>
           </div>
           <p className="mt-2 sm:mt-3 text-sm text-muted-foreground line-clamp-2">

@@ -77,10 +77,10 @@ export default function IndexPage() {
         <div className="container flex max-w-[64rem] flex-col items-center gap-3 sm:gap-4 text-center">
           <Image
             src={profileImg}
-            height={120}
-            width={120}
+            height={200}
+            width={200}
             sizes="(max-width: 640px) 140px, (max-width: 768px) 160px, 200px"
-            className="bg-primary rounded-full mb-2 sm:mb-0 md:mb-2 w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px] h-auto border-4 sm:border-6 md:border-8 border-primary shadow-lg"
+            className="rounded-full mb-2 sm:mb-0 md:mb-2 w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px] h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] aspect-square object-cover border-4 sm:border-6 md:border-8 border-primary shadow-lg"
             alt="Yordanos Yohannes - Full Stack Developer Portfolio"
             priority
           />
@@ -94,16 +94,16 @@ export default function IndexPage() {
           <AnimatedText
             as="h3"
             delay={0.4}
-            className="font-heading text-sm sm:text-lg md:text-xl lg:text-2xl text-muted-foreground"
+            className="font-heading text-base sm:text-xl md:text-2xl text-foreground font-semibold"
           >
-            Full Stack Developer
+            Co-Founder at <span className="text-primary font-bold">Ethiora Technology PLC</span> & Full-Stack Systems Engineer
           </AnimatedText>
-          <div className="mt-2 sm:mt-4 max-w-[90%] sm:max-w-[42rem] text-center px-2 sm:px-0">
+          <div className="mt-3 sm:mt-5 max-w-[90%] sm:max-w-[46rem] text-center px-2 sm:px-0">
             <p className="leading-relaxed text-muted-foreground text-xs sm:text-sm md:text-base">
-              Hi am Yordanos Yohannes a full stack developer with a passion for
-              developing scalable web applications and working across the full
-              stack.And really passionate about AI and Devops and always eager
-              to learn new technologies and improve my skills.
+              Technical Co-Founder and full-stack software engineer architecting nationwide digital infrastructure
+              in Ethiopia. Leading the engineering of <strong className="text-foreground">Ethiora HMS</strong> (offline-resilient
+              hospital operations & EMR platform deployed across regional medical centers), national SACCO credit intelligence
+              systems serving over 8M members, and high-performance FinTech integrations with Telebirr and CBE Birr.
             </p>
           </div>
 
@@ -281,8 +281,8 @@ export default function IndexPage() {
             {pagesConfig.experience.description}
           </AnimatedText>
         </div>
-        <div className="mx-auto grid justify-center gap-4 md:w-full lg:grid-cols-3">
-          {experiences.slice(0, 3).map((experience, index) => (
+        <div className="mx-auto grid justify-center gap-4 md:w-full md:grid-cols-2">
+          {experiences.map((experience, index) => (
             <AnimatedSection
               key={experience.id}
               delay={0.1 * (index + 1)}

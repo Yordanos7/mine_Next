@@ -1,6 +1,8 @@
 import {
   AlertTriangle,
   ArrowRight,
+  Award,
+  BadgeCheck,
   BookMarked,
   Building,
   Check,
@@ -114,6 +116,8 @@ export const Icons = {
   chevronDown: ChevronDown,
   laughEmoji: BiLaugh,
   check: Check,
+  award: Award,
+  badgeCheck: BadgeCheck,
   infoMark: BsInfoCircle,
   questionMark: BsQuestionCircle,
   link: HiOutlineLink,

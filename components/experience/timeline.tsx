@@ -60,7 +60,7 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
                   </div>
                 )}
                 <div className="flex-1 min-w-0">
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3">
                     <h3 className="text-lg sm:text-xl font-bold text-foreground">
                       {experience.position}
                     </h3>
@@ -70,6 +70,12 @@ const Timeline: React.FC<TimelineProps> = ({ experiences }) => {
                         experience.endDate
                       )}
                     </span>
+                    {experience.certificate && (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs sm:text-sm font-medium bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 w-fit">
+                        <Icons.award className="w-3.5 h-3.5" />
+                        {experience.certificate.type}
+                      </span>
+                    )}
                   </div>
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-sm font-medium text-muted-foreground">

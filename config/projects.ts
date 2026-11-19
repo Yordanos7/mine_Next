@@ -29,6 +29,69 @@ export interface ProjectInterface {
 
 export const Projects: ProjectInterface[] = [
   {
+    id: "ethiora-hms",
+    companyName: "Ethiora HMS",
+    type: "Professional",
+    category: [
+      "Healthcare",
+      "Hospital Management",
+      "Full Stack",
+      "Enterprise",
+      "Ethiopia",
+    ],
+    shortDescription:
+      "Enterprise Clinical Operations, Revenue Protection & EMR platform engineered by Ethiora Technology PLC. Features Remote Digital Card intake, Telebirr/CBE payment gates, FEFO pharmacy radar, and offline resilience.",
+    websiteLink: "mailto:ethioratechnology@gmail.com",
+    techStack: [
+      "Next.js",
+      "React",
+      "Typescript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma",
+      "REST API",
+      "Web Security",
+      "Authentication & Security",
+      "Full-Stack Development",
+      "Real-Time Applications",
+    ],
+    startDate: new Date("2025-06-01"),
+    endDate: null,
+    companyLogoImg: "/projects/ethiora/logo.png",
+    pagesInfoArr: [
+      {
+        title: "Clinical Operations & EMR Overview",
+        description:
+          "End-to-end hospital management from patient registration and triage to electronic medical records, laboratory orders, and inpatient ward care.",
+        imgArr: ["/projects/ethiora/banner.png"],
+      },
+      {
+        title: "AI & Innovation in Healthcare",
+        description:
+          "Intelligent healthcare data processing, automated Ministry of Health DHIS2 reporting, and modern diagnostic integration.",
+        imgArr: ["/projects/ethiora/ai-banner.png"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "Ethiora HMS is an enterprise-grade Clinical & Hospital Operations Platform engineered specifically for healthcare centers, private clinics, and hospital networks in Ethiopia. Built by Ethiora Technology PLC under Yordanos Yohannes's technical co-leadership, the platform transforms daily clinical operations and solves systemic revenue leakage.",
+        "The system introduces a groundbreaking Remote Digital Card System (የርቀት ካርድ መቁረጫ), allowing patients from surrounding woredas and cities to reserve and pay for VIP or express appointments via Telebirr or CBE Birr before traveling. This eliminates 40-minute paper card room delays, doubles consultation throughput, and secures guaranteed pre-paid clinic revenue.",
+        "Ethiora HMS enforces strict pre-payment diagnostic gates (eliminating unbilled lab/imaging tests), automated FEFO (First-Expiring-First-Out) pharmacy inventory defense, permanent Ethiopian Health QR IDs, and seamless offline-first operation to survive local internet blackouts without losing a single patient record.",
+      ],
+      bullets: [
+        "Co-founded and engineered by Ethiora Technology PLC as a flagship healthcare enterprise product.",
+        "Features Remote Digital Card System (የርቀት ካርድ መቁረጫ) integrated with Telebirr & CBE Birr.",
+        "Strict pre-payment diagnostic gates increase captured clinic revenue by 18% to 25%.",
+        "Automated FEFO pharmacy controls stop medication expiration losses with 90/60/30-day alert radars.",
+        "Native bilingual interface (Amharic & English) with Ethiopian Calendar (የኢትዮጵያ ዘመን አቆጣጠር) support.",
+        "Full Ministry of Health (MoH) DHIS2 e-HMIS reporting compliance.",
+        "Offline-resilient architecture ensures 100% uptime during power or network outages.",
+      ],
+    },
+  },
+  {
     id: "soser-union",
     companyName: "Soser Union",
     type: "Professional",
@@ -364,4 +427,4 @@ export const Projects: ProjectInterface[] = [
   },
 ];
 
-export const featuredProjects = Projects.slice(0, 3);
+export const featuredProjects = Projects.slice(0, 6);
